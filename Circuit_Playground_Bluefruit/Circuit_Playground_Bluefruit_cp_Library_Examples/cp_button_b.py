@@ -1,0 +1,11 @@
+"""This example turns the little red LED on only while button B is currently being pressed."""
+from adafruit_circuitplayground import cp
+
+while True:
+    if cp.button_b:
+        cp.red_led = True
+    else:
+        cp.red_led = False
+
+# Can also be written as:
+#    cp.red_led = cp.button_b
