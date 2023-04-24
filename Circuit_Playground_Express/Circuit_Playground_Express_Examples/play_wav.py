@@ -1,5 +1,5 @@
 """THIS EXAMPLE REQUIRES A WAV FILE FROM THE ADDITIONAL_CONTENT FOLDER IN THE PyCon2019 REPO!
-Copy the "dip.wav" file to your CIRCUITPY drive.
+Copy the "space.wav" file to your CIRCUITPY drive.
 
 Once the file is copied, this example plays a wav file using the speaker on the CPX, the grey
 square located next to the picture of musical notes on the board."""
@@ -11,7 +11,7 @@ import digitalio
 speaker_enable = digitalio.DigitalInOut(board.SPEAKER_ENABLE)
 speaker_enable.switch_to_output(value=True)
 
-data = open("dip.wav", "rb")
+data = open("space.wav", "rb")
 wav = audiocore.WaveFile(data)
 a = audioio.AudioOut(board.SPEAKER)
 
